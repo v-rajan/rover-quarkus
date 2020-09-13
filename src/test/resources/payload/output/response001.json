@@ -1,0 +1,14 @@
+{
+	"rovers": [
+		{
+			"positionX": 1,
+			"positionY": 3,
+			"point": "NORTH"
+		},
+		{
+			"positionX": 5,
+			"positionY": 1,
+			"point": "EAST"
+		}
+	]
+}

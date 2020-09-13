@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.vrajan.rover.grpc";
+option java_outer_classname = "RoverProto";
+
+package rover;
+
+service Command {
+  rpc move (Input) returns (Output) {}
+}
+
+message Input {
+	Plateau plateau = 1;
+    repeated Instructions instructions = 2;
+}
+
+message Output {
+    repeated Rover rovers = 1;
+}
+
+message Instructions {
+	Rover rover = 1;
+	repeated Instruction instructions = 2;
+}
+
+message Instruction {
+  enum Direction {
+   	STOP = 0;
+    RIGHT = 1;
+    LEFT = 2;
+    MOVE = 3;
+  }
+  Direction direction = 1;
+}
+
+message Plateau {
+  int32 positionX = 1;
+  int32 positionY = 2;
+}
+
+message Rover {
+  int32 positionX = 1;
+  int32 positionY = 2;
+  enum Point {
+  	INIT = 0;
+    NORTH = 1;
+    SOUTH = 2;
+    EAST = 3;
+    WEST = 4;
+  }
+  Point point = 3;
+}
+

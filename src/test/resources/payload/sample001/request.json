@@ -1,0 +1,83 @@
+{
+	"plateau": {
+		"positionX": 5,
+		"positionY": 5
+	},
+	"instructions": [
+		{
+			"rover": {
+				"positionX": 1,
+				"positionY": 2,
+				"point": "NORTH"
+			},
+			"instructions": [
+				{
+					"direction": "LEFT"
+				},
+				{
+					"direction": "MOVE"
+				},
+				{
+					"direction": "LEFT"
+				},
+				{
+					"direction": "MOVE"
+				},
+				{
+					"direction": "LEFT"
+				},
+				{
+					"direction": "MOVE"
+				},
+				{
+					"direction": "LEFT"
+				},
+				{
+					"direction": "MOVE"
+				},
+				{
+					"direction": "MOVE"
+				}
+			]
+		},
+		{
+			"rover": {
+				"positionX": 3,
+				"positionY": 3,
+				"point": "EAST"
+			},
+			"instructions": [
+				{
+					"direction": "MOVE"
+				},
+				{
+					"direction": "MOVE"
+				},
+				{
+					"direction": "RIGHT"
+				},
+				{
+					"direction": "MOVE"
+				},
+				{
+					"direction": "MOVE"
+				},
+				{
+					"direction": "RIGHT"
+				},
+				{
+					"direction": "MOVE"
+				},
+				{
+					"direction": "RIGHT"
+				},
+				{
+					"direction": "RIGHT"
+				},
+				{
+					"direction": "MOVE"
+				}
+			]
+		}
+	]
+}
